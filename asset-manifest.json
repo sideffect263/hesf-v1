@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/hesf-v1/static/js/main.36279d68.js",
+    "static/js/307.fd3a5fec.js": "/hesf-v1/static/js/307.fd3a5fec.js",
+    "static/media/bamot_misparaim_memunaot-1.jpg": "/hesf-v1/static/media/bamot_misparaim_memunaot-1.070eb8a5c4472c061be7.jpg",
+    "static/media/icon.png": "/hesf-v1/static/media/icon.c768c5e6f517d5c597df.png",
+    "favicon.ico": "/hesf-v1/favicon.ico",
+    "static/media/boom-lift-icon.png": "/hesf-v1/static/media/boom-lift-icon.ae654bcafb0736417ad0.png",
+    "static/media/warehouse-icon.png": "/hesf-v1/static/media/warehouse-icon.436bae96926169beb34c.png",
+    "index.html": "/hesf-v1/index.html",
+    "static/media/lift-slab-icon.png": "/hesf-v1/static/media/lift-slab-icon.6d39770225b425fd1f95.png",
+    "static/media/farm-icon.png": "/hesf-v1/static/media/farm-icon.1d38b2081a8e8910371d.png",
+    "favicon-32.png": "/hesf-v1/favicon-32.png",
+    "favicon-16.png": "/hesf-v1/favicon-16.png",
+    "serve.json": "/hesf-v1/serve.json",
+    "manifest.json": "/hesf-v1/manifest.json",
+    "main.36279d68.js.map": "/hesf-v1/static/js/main.36279d68.js.map",
+    "307.fd3a5fec.js.map": "/hesf-v1/static/js/307.fd3a5fec.js.map"
+  },
+  "entrypoints": [
+    "static/js/307.fd3a5fec.js",
+    "static/js/main.36279d68.js"
+  ]
+}
