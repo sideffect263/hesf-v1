@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Platform, Image,Button,TouchableOpacity } from 
 import MainScreen from './src/screens/MainScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import ofekLogo from '../assets/ofek logo.png'
+import ofekLogo from './assets/ofekLogo.png'
 
 
 const Stack = createNativeStackNavigator();
