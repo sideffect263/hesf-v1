@@ -8,49 +8,43 @@ import lifticon from '../../assets/9b9/lift-slab-icon.png'
 import { Dropdown } from 'react-native-element-dropdown';
 
 
-var filterArr=[]
-filterArr[0]=-1
+
 const data ={
     
-     fieldData : [
-        { label: 'indoor', value: '1',image:warehouseicon },
-        { label: 'outdoor', value: '2',image:farmicon },
-        { label: 'outdorr - 4X4', value: '3' },
-        { label: 'any', value: '4' },
-       
-      ],
-      vehicleTypeData : [
-        { label: 'vertical lift', value: '1' },
-        { label: 'scissor lift', value: '2' },
-        { label: 'boom lift', value: '4' },
-        { label: 'telescopic lift', value: '5' },
-        { label: 'forklift', value: '6' },
-        { label: 'any', value: '7' },
-      ],
+  groundType : [
+     { label: 'מהודק', value: '1' },
+    { label: 'כורכר ואדמה', value: '2' },
+    { label: 'הכל', value: '3' },
+  ],
+      vehicleType : [
+        { label: 'במת מספריים', value: '1' },
+    { label: 'במה מפרקית', value: '2' },
+    { label: 'במה טלסקופית', value: '5' },
+    { label: 'מלגזה', value: '6' },
+    { label: 'הכל', value: '7' },
+  ],
       engType:[
-        { label: 'hand', value: '1',image:warehouseicon },
-        { label: 'oil', value: '2',image:warehouseicon },
-        { label: 'electric', value: '3',image:warehouseicon },
+        { label: 'ידני', value: '1',image:warehouseicon },
+        { label: 'דיזל', value: '2',image:warehouseicon },
+        { label: 'חשמלי', value: '3',image:warehouseicon },
+        { label: 'הכל', value: '4',image:warehouseicon },
       ],
-      hightRange:[
-
-      ],
+   
 //coding stop - resume on next study session
     }
 
 
 const DataFilter = ({type,options,filterData}, navigation ) => {
-    
-  
+    const [fontsLoaded] = useFonts({
+        IcoMoon: require('dooboo-ui/Icon/doobooui.ttf'),
+      });
+
 
 
       const [value, setValue] = useState(null);
       const [iconIm, seticonIm] = useState(null);
       const [isFocus, setIsFocus] = useState(false);
   
-      console.log(value)  
-      filterArr[0]=value
-      console.log(filterArr[0])
       //navigation.navigate('filterCode', { code:'code 1' })
 
 
