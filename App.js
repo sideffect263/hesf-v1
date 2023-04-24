@@ -17,7 +17,7 @@ export default function App( {navigation} ) {
 
            <Stack.Navigator>
             <Stack.Screen
-             name='home' 
+             name='פתרונות בגובה' 
              component={MainScreen} 
              style={styles.container}  
              options={{ 
