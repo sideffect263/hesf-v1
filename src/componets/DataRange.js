@@ -5,22 +5,17 @@ import booicon from '../../assets/9b9/boom-lift-icon.png'
 import warehouseicon from '../../assets/9b9/warehouse-icon.png'
 import farmicon from '../../assets/9b9/farm-icon.png'
 import lifticon from '../../assets/9b9/lift-slab-icon.png'
-import { Dropdown } from 'react-native-element-dropdown';
+import Slider from "react-native-a11y-slider";
 
 
 
 const data ={
+    //data range fitrers
     
- //data range fitrers
-  workHeight: [
-    { label: 'גובה עבודה', min:0, max:50 },
-  ],
-   
-//coding stop - resume on next study session
     }
 
 
-const DataFilter = ({type,options,filterData}, navigation ) => {
+const DataRange = ({type,options,filterData}, navigation ) => {
     const [fontsLoaded] = useFonts({
         IcoMoon: require('dooboo-ui/Icon/doobooui.ttf'),
       });
@@ -36,34 +31,8 @@ const DataFilter = ({type,options,filterData}, navigation ) => {
 
   return (
     <View style={styles.container}> 
-    <View style={styles.imagecontainer}>
-        <Image
-        style={styles.mainImage}
-        source={iconIm}
-        />
-        </View>
         <View style={styles.selector}>
-        <Dropdown
-          style={[styles.dropdown, isFocus && { borderColor: 'blue' }]}
-          placeholderStyle={styles.placeholderStyle}
-          selectedTextStyle={styles.selectedTextStyle}
-          inputSearchStyle={styles.inputSearchStyle}
-          iconStyle={styles.iconStyle}
-          data={options}
-          maxHeight={300}
-          labelField="label"
-          valueField="value"
-          placeholder={!isFocus ? 'Select item' : '...'}
-          value={value}
-          onFocus={() => setIsFocus(true)}
-          onBlur={() => setIsFocus(false)}
-          onChange={item => {
-            setValue(item.value);
-            setIsFocus(false);
-            seticonIm(item.image);
-            filterData(type,item.label)
-          }}
-        />
+        <Slider  min={1} max={100} values={[10, 87]} />
         </View>
     </View>
   )
@@ -114,4 +83,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default DataFilter
+export default DataRange
