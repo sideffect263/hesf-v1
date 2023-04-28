@@ -10,8 +10,9 @@ var itemIndex = 0;
 //start of main
 const ImagSlider = ({data}) => {
 
+  const [itemModel, setItemModel] = useState();
+
   const Item = ({item}) => (
-    
     
     <View style={styles.itemBox}>
 
@@ -20,17 +21,27 @@ const ImagSlider = ({data}) => {
   >
 
 
-    <View style={styles.item}>
-    <View style={styles.itemImage}>
+    <View style={
+      {
+        flex:1,
+        backgroundColor: item.color, 
+        marginVertical:'0.4%',    
+        flexDirection:'row',
+        justifyContent:'space-around',
+        borderWidth:2,
+        borderColor:'white',
+      }
+    }>
+  
+<View style={styles.itemText}>
+<Text>{item.name}</Text>
+</View>
+<View style={styles.itemImage}>
                 <Image
                   style={styles.mainImage}
                   source={item.image}
                   />
     </View>
-
-<View style={styles.itemText}>
-<Text>{item.name}</Text>
-</View>
 
 
                   </View>
@@ -151,6 +162,7 @@ const styles = StyleSheet.create({
     flex:1,
     height:200,
     backgroundColor:'white',
+    justifyContent:'center',
   },
   itemText:{
     flex:3,
@@ -235,6 +247,13 @@ const styles = StyleSheet.create({
     itemBox:{
      flex:1,
      backgroundColor:'#566e3d',
+    },
+    jlg:{
+    },
+    manitou:{
+
+    },
+    genie:{
     },
     item: {
       flex:1,

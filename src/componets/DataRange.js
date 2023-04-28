@@ -1,11 +1,10 @@
 import { Image, View, Text ,StyleSheet,FlatList, SafeAreaView, StatusBar, TouchableOpacity, Platform} from 'react-native'
 import React,{useState} from 'react'
-import {useFonts} from 'expo-font';
 import booicon from '../../assets/9b9/boom-lift-icon.png'
 import warehouseicon from '../../assets/9b9/warehouse-icon.png'
 import farmicon from '../../assets/9b9/farm-icon.png'
 import lifticon from '../../assets/9b9/lift-slab-icon.png'
-import Slider from "react-native-a11y-slider";
+import {Slider} from '@miblanchard/react-native-slider';
 
 
 
@@ -15,35 +14,91 @@ const data ={
     }
 
 
-const DataRange = ({type,options,filterData}, navigation ) => {
-    const [fontsLoaded] = useFonts({
-        IcoMoon: require('dooboo-ui/Icon/doobooui.ttf'),
-      });
+const DataRange = ({ratioType,name,type,options,filterData}, navigation ) => {
+  
 
 
 
-      const [value, setValue] = useState(null);
+
+      const [value, setValue] = useState(0);
       const [iconIm, seticonIm] = useState(null);
       const [isFocus, setIsFocus] = useState(false);
   
       //navigation.navigate('filterCode', { code:'code 1' })
 
 
+       
+const rangeChange=(value)=>{
+    console.log('hey')
+    console.log(options[1])
+    setValue(value)
+    console.log(value)
+    console.log(type)
+    filterData(type,value)
+
+}
+
   return (
     <View style={styles.container}> 
+    <View style={styles.itemTitle}>
+    <Text style={styles.itemTitleText}>{name}</Text>
+    </View>
         <View style={styles.selector}>
-        <Slider  min={1} max={100} values={[10, 87]} />
+        <Slider 
+        step={0.1}
+        minimumValue={options[0]}
+        maximumValue={options[1]}
+        minimumTrackTintColor="#FFFFFF"
+        maximumTrackTintColor="#000000"
+        thumbTintColor="#FFFFFF"
+        thumbStyle={{height: 14, width: 14, backgroundColor: '#FFFFFF'}}
+        value={value}
+        onValueChange={(value) =>{
+           rangeChange(value)}
+        } 
+     />
+        </View>
+        <View style={styles.itemValue}>
+            
+        <Text style={styles.itemValueText}>{value} {ratioType} </Text>
         </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
+    itemTitle:{
+        flex:1,
+        justifyContent:'flex-start',
+        alignItems:'center',
+    },
+    itemTitleText:{
+        fontSize:17,
+        fontWeight:'bold',
+        color:'white',
+        justifyContent:'center',
+        alignItems:'center',
+    },
+
+    itemValue:{
+        flex:1,
+        justifyContent:'flex-end',
+        alignItems:'center',
+    },
+    itemValueText:{
+        fontSize:17,
+        fontWeight:'normal',
+        color:'white',
+    },
+    
+
     imagecontainer:{
         flex:7,
+        
     },
     selector:{
-        flex:3,
+        flex:1,
+        justifyContent:'center',
     },
     container:{
         ...Platform.select({
@@ -61,10 +116,16 @@ const styles = StyleSheet.create({
                 flex:1,
                 alignSelf:'center',
                 flexDirection:'column',
-                borderWidth:2 , 
-                borderColor:'white',
+                backgroundColor:'#566e3d',
+                //style this block
+                
+                
                 margin:'3%',
-                alignSelf:'strech'
+                alignSelf:'strech',
+                borderRadius:10,
+                borderWidth:2,
+                borderColor:'black',
+
             },
             
             default:{},

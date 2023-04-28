@@ -1,6 +1,5 @@
 import { Image, View, Text ,StyleSheet,FlatList, SafeAreaView, StatusBar, TouchableOpacity, Platform} from 'react-native'
 import React,{useState} from 'react'
-import {useFonts} from 'expo-font';
 import booicon from '../../assets/9b9/boom-lift-icon.png'
 import warehouseicon from '../../assets/9b9/warehouse-icon.png'
 import farmicon from '../../assets/9b9/farm-icon.png'
@@ -13,9 +12,7 @@ import { Dropdown } from 'react-native-element-dropdown';
 
 
 const DataFilter = ({name,type,options,filterData}, navigation ) => {
-    const [fontsLoaded] = useFonts({
-        IcoMoon: require('dooboo-ui/Icon/doobooui.ttf'),
-      });
+   
 
 
 
@@ -104,6 +101,7 @@ const styles = StyleSheet.create({
         resizeMode:'contain',
         flex:1,
         alignSelf:'stretch',
+        margin:'8%',
     },
     dropdown: {
         flex:1,
@@ -122,7 +120,23 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         fontSize:13,
         textDecorationLine:'underline',
-    }
+    },
+    itemTitle:{
+        flex:1,
+        alignSelf:'center',
+        textAlign:'center',
+    },
+    selectedTextStyle:{
+        flex:1,
+        alignSelf:'center',
+        textAlign:'center',
+    },
+    inputSearchStyle:{
+        flex:1,
+        alignSelf:'center',
+        textAlign:'center',
+    },
+    
 
 })
 
