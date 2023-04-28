@@ -353,7 +353,7 @@ const config_data =[//hold all the filters
     filter_title:"סוג כלי",
     options:  [          
     { label: 'במת מספריים', value: '1',image:lifticon },
-    { label: 'במה מפרקית', value: '2',image:boomIcon },
+    { label: 'זרוע מפרקית', value: '2',image:boomIcon },
     { label: 'במה טלסקופית', value: '5' ,image:teleBoom},
     { label: 'מלגזה', value: '6',image:forkliftIcon },
     { label: 'הכל', value: '7', image:anyIcon  },]
