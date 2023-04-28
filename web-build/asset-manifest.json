@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.js": "/static/js/main.c3a8601b.js",
+    "static/js/856.e8a9512e.js": "/static/js/856.e8a9512e.js",
+    "static/media/hand-engine.png": "/static/media/hand-engine.a6d44d8c6105f0af83f8.png",
+    "static/media/bamot_misparaim_memunaot-1.jpg": "/static/media/bamot_misparaim_memunaot-1.070eb8a5c4472c061be7.jpg",
+    "static/media/gas-engine.png": "/static/media/gas-engine.4dca7c6e039309695d23.png",
+    "static/media/uneven.png": "/static/media/uneven.66714931dc5013548c4a.png",
+    "static/media/level.png": "/static/media/level.0e296175f2ba425fbe5e.png",
+    "static/media/forklift.png": "/static/media/forklift.40e276cff3aa93a3b5eb.png",
+    "static/media/everything.png": "/static/media/everything.8b9d74ffe97d647e7576.png",
+    "static/media/boom-lift-icon.png": "/static/media/boom-lift-icon.fd7167553f3b119781e3.png",
+    "static/media/tool-box.png": "/static/media/tool-box.dd9bd0d1b0c88d241aef.png",
+    "static/media/electric-engine.png": "/static/media/electric-engine.2a7bc77610e86690c300.png",
+    "static/media/undo.png": "/static/media/undo.5fbaafa41720e9314efd.png",
+    "static/media/soil.png": "/static/media/soil.8fe966520d84a28961b0.png",
+    "favicon.ico": "/favicon.ico",
+    "static/media/boom-lift-tele.png": "/static/media/boom-lift-tele.917e1202b75b113376fb.png",
+    "static/media/warehouse-icon.png": "/static/media/warehouse-icon.436bae96926169beb34c.png",
+    "static/media/ofekLogo.png": "/static/media/ofekLogo.110ddf50388b1c095e37.png",
+    "static/media/lift-slab-icon.png": "/static/media/lift-slab-icon.6d39770225b425fd1f95.png",
+    "index.html": "/index.html",
+    "static/media/vertical.png": "/static/media/vertical.a0111aeacfec79169288.png",
+    "static/media/horizontal.png": "/static/media/horizontal.96ad68d428e045e21861.png",
+    "static/media/asphalt.png": "/static/media/asphalt.fde21981c5bab3bb6727.png",
+    "static/media/farm-icon.png": "/static/media/farm-icon.1d38b2081a8e8910371d.png",
+    "favicon-32.png": "/favicon-32.png",
+    "manifest.json": "/manifest.json",
+    "favicon-16.png": "/favicon-16.png",
+    "serve.json": "/serve.json",
+    "main.c3a8601b.js.map": "/static/js/main.c3a8601b.js.map",
+    "856.e8a9512e.js.map": "/static/js/856.e8a9512e.js.map"
+  },
+  "entrypoints": [
+    "static/js/856.e8a9512e.js",
+    "static/js/main.c3a8601b.js"
+  ]
+}

@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, Platform, Image,Button,TouchableOpacity } from 
 import MainScreen from './src/screens/MainScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import ofekLogo from './assets/ofekLogo.png'
 
 
 const Stack = createNativeStackNavigator();
@@ -23,11 +22,6 @@ export default function App( {navigation} ) {
              style={styles.container}  
              options={{ 
               headerShown:false,
-            headerTitle:()=>(
-              <TouchableOpacity onPress={()=>window.location.replace('https://www.ofeklift.com/')}>
-              <Image style={styles.headBarImage} source={ofekLogo} />
-              </TouchableOpacity>
-            ),
             }} 
 
              />
