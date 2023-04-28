@@ -11,47 +11,32 @@ var itemIndex = 0;
 const ImagSlider = ({data}) => {
 
   const Item = ({item}) => (
-    itemIndex++,
-  
+    
+    
     <View style={styles.itemBox}>
-  
+
   <TouchableOpacity 
   onPress={()=>imgPressed(item)}
   >
-  
+
+
     <View style={styles.item}>
-                <Text>{item.name}</Text>
+    <View style={styles.itemImage}>
                 <Image
                   style={styles.mainImage}
                   source={item.image}
                   />
     </View>
+
+<View style={styles.itemText}>
+<Text>{item.name}</Text>
+</View>
+
+
+                  </View>
+
+
    
-    </TouchableOpacity>
-  
-    <TouchableOpacity 
-  onPress={()=>imgPressed(item)}
-  >
-    <View style={styles.item}>
-                <Text>{item.name}</Text>
-                <Image
-                  style={styles.mainImage}
-                  source={item.image}
-                  />
-    </View>
-    </TouchableOpacity>
-
-
-    <TouchableOpacity 
-  onPress={()=>imgPressed(item)}
-  >
-    <View style={styles.item}>
-                <Text>{item.name}</Text>
-                <Image
-                  style={styles.mainImage}
-                  source={item.image}
-                  />
-    </View>
     </TouchableOpacity>
     </View>
   );
@@ -162,6 +147,14 @@ const styles = StyleSheet.create({
     borderWidth:2,
     borderColor:'red',
   },
+  itemImage:{
+    flex:1,
+    height:200,
+    backgroundColor:'white',
+  },
+  itemText:{
+    flex:3,
+  },
   itemImageView:{
     flex:2,
     flexDirection:'column',
@@ -234,27 +227,23 @@ const styles = StyleSheet.create({
         }
     },
     mainImage: {
-        flex:1,
-        resizeMode:'contain',
-        width:'100%',
-        alignSelf:'stretch',
-        borderWidth:1,
+      flex:1,
+      resizeMode:'contain',
+      borderWidth:2,
     },
 
     itemBox:{
      flex:1,
-    flexDirection:'row',
-    justifyContent:'space-around',
-
+     backgroundColor:'#566e3d',
     },
     item: {
       flex:1,
-      backgroundColor: '#f9c2ff', 
-      marginVertical: 8,
-      marginHorizontal: 16,
+      backgroundColor: '#86bbd8', 
+      marginVertical:'0.4%',    
+      flexDirection:'row',
+      justifyContent:'space-around',
       borderWidth:2,
-      borderColor:'red',
-
+      borderColor:'white',
     },
     modalTextTitle:{
       fontSize:20,

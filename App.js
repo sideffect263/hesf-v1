@@ -13,6 +13,7 @@ export default function App( {navigation} ) {
   return (
 
 
+
     <NavigationContainer>
 
            <Stack.Navigator>
@@ -21,42 +22,32 @@ export default function App( {navigation} ) {
              component={MainScreen} 
              style={styles.container}  
              options={{ 
-              headerRight:()=>(
-                <Text>בית</Text>
-              ),
+              headerShown:false,
             headerTitle:()=>(
               <TouchableOpacity onPress={()=>window.location.replace('https://www.ofeklift.com/')}>
               <Image style={styles.headBarImage} source={ofekLogo} />
               </TouchableOpacity>
             ),
-            
             }} 
-             
+
              />
            </Stack.Navigator>
            </NavigationContainer>
       );
-    
-    
-    
-    
-    
     }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'#fca311',
+    backgroundColor:'#86bbd8',
     alignItems: 'center',
     justifyContent: 'center',
   },
   headBarImage:{
-    marginLeft:'5%',
+      marginLeft:'5%',
       resizeMode:'contain',
       height:'100%',
       width:'300px',
-      borderWidth:1,
-      borderWidth:0,
-      
+      borderWidth:1,      
   },
 });

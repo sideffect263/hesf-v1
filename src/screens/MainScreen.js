@@ -12,8 +12,21 @@ import Constant from 'expo-constants'
 import warehouseicon from '../../assets/9b9/warehouse-icon.png'
 import farmicon from '../../assets/9b9/farm-icon.png'
 import lifticon from '../../assets/9b9/lift-slab-icon.png'
-import anyIcon from '../../assets/icons/icons8-everything-100.png'
+import anyIcon from '../../assets/9b9/everything.png'
+import boomIcon from '../../assets/9b9/boom-lift-icon.png'
 import DataRange from '../componets/DataRange';
+import vertical from '../../assets/9b9/vertical.png'
+import horizontal from '../../assets/9b9/horizontal.png'
+import forkliftIcon from '../../assets/9b9/forklift.png'
+import teleBoom from '../../assets/9b9/boom-lift-tele.png'
+import handEngine from '../../assets/9b9/hand-engine.png'
+import electricEngine from '../../assets/9b9/electric-engine.png'
+import gasEngine from '../../assets/9b9/gas-engine.png'
+import asphalt from '../../assets/9b9/asphalt.png'
+import soil from '../../assets/9b9/soil.png'
+import uneven from '../../assets/9b9/uneven.png'
+import level from '../../assets/9b9/level.png'
+import toolBox from '../../assets/9b9/tool-box.png'
 
 const data = [//holds all the raw data
   {
@@ -26,7 +39,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
-    image:'https://www.ofeklift.com/images/categories/Electric-Scissor-Lift-ES19.jpg',
+    image:'https://www.lectura-specs.com/models/renamed/orig/wheeled-scissor-lifts-gs1330m-genie.jpg',
   },
   {
     name: 'GS1930',
@@ -38,6 +51,8 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.acmetools.com/on/demandware.static/-/Sites-acme-catalog-m-en/default/dw1d72de20/images/images/catalog/product/g/GS-1930-Main.jpg',
+
   },
   {
     name: 'GS2032',
@@ -49,6 +64,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.colle.eu/media/11768/2032-pdp-elektro.jpg?width=550',
   },
   {
     name: 'GS2632',
@@ -60,6 +76,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.accessplatforms.co.uk/pub/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/g/s/gs2632_cut_out_extended.jpg',
   },
   {
     name: 'GS3246',
@@ -71,6 +88,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.colle.eu/media/11770/3246-pdp-elektro.jpg?width=550',
   },
   {
     name: 'GS4047',
@@ -82,6 +100,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.aerialliftequipment.com/files/catalog/genie-gs-4047.png',
   },
   {
     name: '4069LE',
@@ -93,6 +112,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://foursite-pape-production.s3.amazonaws.com/papemh.com/14f7fe19-e1b6-4b7a-9ff5-df04a0f65715.jpg',
   },
   {
     name: 'GS3232',
@@ -104,6 +124,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח משופע',
+    image:'https://www.genielift.com/images/default-source/product-images/slab-scissor-lift/gs-2632/gs-2632_cutou-1d.jpg?sfvrsn=9d50a5c2_19',
   },
   {
     name: 'GS4069',
@@ -115,6 +136,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח משופע',
+    image:'https://www.conger.com/wp-content/uploads/2018/03/Genie-GS-4069-DC-Scissor-Lift.jpg',
   },
   {
     name: '1230ES',
@@ -126,6 +148,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://cdn-jlg.scdn5.secure.raxcdn.com/-/media/jlg/current-materials-no-password/products/americas---ansi/vertical-lifts-and-stock-pickers/1230es-vertical-mast/images/1230es-gallery-silo.png?rev=facc5feb8f1d4706a4f42c0e13fbc1dd',
   },
   {
     name: 'GR15',
@@ -137,6 +160,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.gtaccess.co.uk/system/machineimages/193GE/GR15_1.png',
   },
   {
     name: 'GR20',
@@ -148,6 +172,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.canlift.ca/wp-content/uploads/2019/06/71NwyhcNUkL._SL1500_.jpg',
   },
   {
     name: '10E',
@@ -159,6 +184,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://hird.co.uk/assets/uploads/2022/05/jlg-t10-personnel-mast-boom-lift.png',
   },
   {
     name: '260MRT',
@@ -170,6 +196,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'הכל',
     groundLevel:'שטח מפולס ישר',
+    image:'https://riwal.getbynder.com/m/823549baa324f83f/webimage-jlg-260mrt-a.png',
   },
   {
     name: 'GS3384RT',
@@ -181,6 +208,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'הכל',
     groundLevel:'הכל',
+    image:'https://www.averasia.com/wp-content/uploads/2020/02/GS-3384-RT.jpg',
   },
   {
     name: 'GS4069RT',
@@ -192,6 +220,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'הכל',
     groundLevel:'הכל',
+    image:'https://www.genielift.com/images/default-source/product-images/rough-terrain-scissor-lifts/gs-4069-rt/gs-4069rt_cutout-1.jpg?sfvrsn=c901efa0_19',
   },
   {
     name: 'GS5390RT',
@@ -203,6 +232,7 @@ const data = [//holds all the raw data
     accessibility: 'אנכי',
     groundType: 'הכל',
     groundLevel:'הכל',
+    image:'https://www.genielift.com/images/default-source/product-images/rough-terrain-scissor-lifts/gs-5390-rt/gs-5390rt_cutout-1.jpg?sfvrsn=1b0aefa0_19',
   },
   {
     name: 'Z30',
@@ -215,6 +245,7 @@ const data = [//holds all the raw data
     accessibility: 'הכל',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.genielift.com/images/default-source/product-images/articulated-boom-lift/z-30-20-n/z-3020nrj_rev-cutout-1.jpg?sfvrsn=7daeba0b_19',
   },
   {
     name: '120AETJ',
@@ -227,6 +258,7 @@ const data = [//holds all the raw data
     accessibility: 'הכל',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://media.manitou-group.com/download/largejpg/551476-studio_mewp_120_aetj_c_manitou_003.jpg',
   },
   {
     name: 'Z34',
@@ -239,6 +271,7 @@ const data = [//holds all the raw data
     accessibility: 'הכל',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.genielift.com/images/default-source/product-images/articulated-boom-lift/z-34-22-ic/z-3422ic_cutout-1.jpg?sfvrsn=2c8861f9_26',
   },
   {
     name: '150AETJ',
@@ -251,6 +284,7 @@ const data = [//holds all the raw data
     accessibility: 'הכל',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://www.grupema.com/wp-content/uploads/2015/09/studio_mewp_150_aetj_c_manitou_003.jpg',
   },
   {
     name: 'Z45',
@@ -263,6 +297,7 @@ const data = [//holds all the raw data
     accessibility: 'הכל',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://hml.co.il/wp-content/uploads/2019/11/Z45-25J.jpg',
   },
   {
     name: '170AETJ',
@@ -275,20 +310,36 @@ const data = [//holds all the raw data
     accessibility: 'הכל',
     groundType: 'מהודק',
     groundLevel:'שטח מפולס ישר',
+    image:'https://media.manitou-group.com/download/largejpg/501980-studio_mewp_170_aetj_l_manitou_002.jpg',
   },
+{
+    name: 'Z34',
+    vehicleType: 'זרוע מפרקית',
+    engType: 'דיזל',
+    workLocation: 'פתוח',
+    workHeight: '12.50',
+    liftStrenght: '0.227',
+    liftAccesibility: '6.80',
+    accessibility: 'הכל',
+    groundType: 'הכל',
+    groundLevel:'שטח מפולס ישר',
+    
+},
 ]
 
 
 const config_data =[//hold all the filters
   {
     filter_name:"accessibility",
+    filter_title:"נגישות",
     options:  [          
-    { label: 'אנכי', value: 'vertical' },
-    { label: 'מאוזן', value: 'horizontal' },
-    { label: 'הכל', value: 'any' },]
+    { label: 'אנכי', value: 'vertical', image:vertical },
+    { label: 'מאוזן', value: 'horizontal', image:horizontal },
+    { label: 'הכל', value: 'any', image:anyIcon },]
   },
   {
     filter_name:"workLocation",
+    filter_title:"מקום עבודה",
     filterType:'dropdown',
     options:  [ 
     { label: 'סגור', value: 'closed',image:warehouseicon },
@@ -299,37 +350,44 @@ const config_data =[//hold all the filters
 
   {
     filter_name:"vehicleType",
+    filter_title:"סוג כלי",
     options:  [          
-    { label: 'במת מספריים', value: '1' },
-    { label: 'במה מפרקית', value: '2' },
-    { label: 'במה טלסקופית', value: '5' },
-    { label: 'מלגזה', value: '6' },
-    { label: 'הכל', value: '7' },]
+    { label: 'במת מספריים', value: '1',image:lifticon },
+    { label: 'במה מפרקית', value: '2',image:boomIcon },
+    { label: 'במה טלסקופית', value: '5' ,image:teleBoom},
+    { label: 'מלגזה', value: '6',image:forkliftIcon },
+    { label: 'הכל', value: '7', image:anyIcon  },]
   } ,
   {
     filter_name:"engType",
+    filter_title:"סוג מנוע",
     options:  [          
-    { label: 'ידני', value: '1',image:warehouseicon },
-    { label: 'סולר/דיזל', value: '2',image:warehouseicon },
-    { label: 'חשמלי', value: '3',image:warehouseicon },
-    { label: 'הכל', value: '4',image:warehouseicon },
+    { label: 'ידני', value: '1',image:handEngine },
+    { label: 'דיזל', value: '2',image:gasEngine },
+    { label: 'חשמלי', value: '3',image:electricEngine },
+    { label: 'הכל', value: '4',image:toolBox },
   ]
   } ,
   {
     filter_name:"groundType",
+    filter_title:"סוג קרקע",
+
     options:  [          
-    { label: 'מהודק', value: '1' },
-    { label: 'כורכר ואדמה', value: '2' },
-    { label: 'הכל', value: '3' },]
+    { label: 'מהודק', value: '1',image:asphalt },
+    { label: 'כורכר ואדמה', value: '2', image:soil },
+    { label: 'הכל', value: '3', image:toolBox },]
   } ,
 
   {
     filter_name:"groundLevel",
+    filter_title:"זווית הקרקע",
+
     options:  [          
-    { label: 'שטח מפולס ישר', value: '1' },
-    { label: 'שטח משופע', value: '2' },
-    { label: 'הכל', value: '3' },]
+    { label: 'שטח מפולס ישר', value: '1' ,image:level},
+    { label: 'שטח משופע', value: '2',image:uneven },
+    { label: 'הכל', value: '3' , image:toolBox},]
   } ,
+  
   ]
 
   const config_data_range =[//hold all the filters of ranges
@@ -339,15 +397,27 @@ const config_data =[//hold all the filters
       { label: 'גובה עבודה', min:0, max:50 },
       ]
     },
+    {
+      filter_name:"liftStrenght",
+      options:  [
+      { label: 'משקל מרבי', min:0, max:50 },
+      ]
+    },
+    {
+      filter_name:"liftAccesibility",
+      options:  [
+      { label: 'נגישות אופקית', min:0, max:50 },
+      ]
+    }
   ]
-
-
 
 const MainScreen = (navigation, route, state) => {
 
   const [filterdData, setFilterdData] = useState(data);
   const [toolFilters,  setToolFilters] = useState({});
   const [config, setConfig] = useState(config_data);
+
+  
 
   console.log("app start")
   console.log(data.length)
@@ -384,20 +454,9 @@ console.log('filter items',toolFilters);
   return (
     <View style={styles.container}>
       <View style={styles.left}>
-        <View style={styles.selectorCard}>
           
         <View style={styles.imageslider}>
      <ImagSlider data={filterdData}/>
-     </View>
-
-    <View style={styles.fliterData}>
-    <Button
-  onPress={filterImgs}
-  title="Learn More"
-  color="#841584"
-  accessibilityLabel="Learn more about this purple button"
-/>
-    </View >
      </View>
 
      </View>
@@ -419,7 +478,7 @@ console.log('filter items',toolFilters);
         {
           config_data.map((item,i)=>{
             return <>
-            <DataFilter filterData={filterData} type={item.filter_name} options={item.options}/>
+            <DataFilter filterData={filterData} name={item.filter_title} type={item.filter_name} options={item.options}/>
             </>
           }
           )
@@ -431,13 +490,16 @@ console.log('filter items',toolFilters);
         {
         config_data_range.map((item,i)=>{
           return <>
-          <DataRange filterData={filterData} type={item.filter_name} options={item.options}/>
+          <DataRange filterData={filterData}  type={item.filter_name} options={item.options}/>
                     </>
         }
         )
       }
         </View>
 
+        <Pressable  style={styles.fliterData}>
+          <Text style={styles.filterbtntext} onPress={filterImgs}>סנן</Text>
+    </Pressable>
       </View>
      </View>
     </View>
@@ -445,52 +507,25 @@ console.log('filter items',toolFilters);
 };
 
 const styles = StyleSheet.create({
-  row1:{
-    flexDirection:'row',
-    alignSelf:'stretch',
-    height:'33%'
-  },
-  row2:{
-    flexDirection:'row',
-    height:'33%',
-    alignSelf:'stretch',
-
-  },
-  row3:{
-    flexDirection:'row',
-    height:'33%',
-    alignSelf:'stretch',
-  },
+  
   fliterData:{
     flex:1,
-    justifyContent:'center'
+    justifyContent:'center',
+    borderWidth:3,
+    backgroundColor:'#f6ae2d',
+
   },
   dataRange:{
-    flex:1,
+    flex:8,
   },
-  infoCard:{
-    ...Platform.select({
-      ios:{},
-      android:{},
-      web:{
-        flex:1,
-      },
-      default:{},
-    }),
+  filterbtntext:{
+    fontSize:20,
+    textAlign:'center',
   },
-  selectorCard:{
-    ...Platform.select({
-      ios:{},
-      android:{},
-      web:{
-        flex:1,
-      },
-      default:{
-        
-      },
-    }),
-   
-    flexDirection:'column',       
+  filterbtn:{
+    borderWidth:10,
+    backgroundColor:'red',
+    padding:10,
   },
   datafilter:{
     
@@ -511,8 +546,9 @@ const styles = StyleSheet.create({
       },
       web:{
         
-        flex:2,
-        
+        flex:8,
+        borderColor:'black',
+        borderWidth:1,
         display:'grid',
         gridTemplateColumns:'1fr 1fr 1fr',
         gridTemplateRows:'1fr 1fr ',
@@ -545,9 +581,9 @@ const styles = StyleSheet.create({
       web:{
       flexDirection:'row',  
       alignItems:'stretch',
-      flex:1,
+      flex:6,
       width:'100%',
-      height:'70%',
+      height:'95%',
     },
       default:{},
 
@@ -565,15 +601,12 @@ const styles = StyleSheet.create({
 
       },
       web:{
-      
+      backgroundColor:'#b9a44c',
       flexDirection:'row',  
       justifyContent:'center',
-      alignItems:'stretch',
-      borderWidth:3,
-      flex:1,
-      borderColor:'blue',
+      flex:3,
       width:'100%',
-      height:'70%',
+      height:'95%',
       },
       default:{},
     }),
@@ -595,13 +628,8 @@ const styles = StyleSheet.create({
         alignSelf:'flex-end',
         justifyContent:'flex-end',
       },
-      web:{
-      borderWidth:2,
-      borderColor:'yellow',
-
-      
-      flex:10,
-        
+      web:{      
+      flex:10, 
       // make the rows heiger
       
       },
@@ -609,25 +637,20 @@ const styles = StyleSheet.create({
     }),
     
   },
-  sliderButtns:{
-    flex:2,
-    borderWidth:2,
-    borderColor:'blue',
-    
-  },
+
   container: {
       flexDirection:'row',
 
       ...Platform.select({
         ios:{
           flexDirection:'colum',
-          backgroundColor:'#57B8FF',
+          backgroundColor:'#86bbd8',
         },
         android:{
-          backgroundColor:'#57B8FF',
+          backgroundColor:'#86bbd8',
         },
         web:{
-          backgroundColor: '#eae2b7',
+          backgroundColor: '#b9a44c',
           alignItems:'center',
 
         },

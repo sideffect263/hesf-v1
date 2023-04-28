@@ -9,18 +9,10 @@ import { Dropdown } from 'react-native-element-dropdown';
 
 
 
-const data ={
-    
- //data range fitrers
-  workHeight: [
-    { label: 'גובה עבודה', min:0, max:50 },
-  ],
-   
-//coding stop - resume on next study session
-    }
 
 
-const DataFilter = ({type,options,filterData}, navigation ) => {
+
+const DataFilter = ({name,type,options,filterData}, navigation ) => {
     const [fontsLoaded] = useFonts({
         IcoMoon: require('dooboo-ui/Icon/doobooui.ttf'),
       });
@@ -36,6 +28,9 @@ const DataFilter = ({type,options,filterData}, navigation ) => {
 
   return (
     <View style={styles.container}> 
+    <View style={styles.itemTitle}>
+    <Text style={styles.itemTitleText}>{name}</Text>
+    </View>
     <View style={styles.imagecontainer}>
         <Image
         style={styles.mainImage}
@@ -50,10 +45,10 @@ const DataFilter = ({type,options,filterData}, navigation ) => {
           inputSearchStyle={styles.inputSearchStyle}
           iconStyle={styles.iconStyle}
           data={options}
-          maxHeight={300}
+          maxHeight={'40%'}
           labelField="label"
           valueField="value"
-          placeholder={!isFocus ? 'Select item' : '...'}
+          placeholder={!isFocus ? 'בחר אפשרות' : '...'}
           value={value}
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
@@ -107,11 +102,29 @@ const styles = StyleSheet.create({
     mainImage: {
         flex:4,
         resizeMode:'contain',
-        borderWidth:2,
-        width:'100%',
-        height:'100%',flex:1,
+        flex:1,
         alignSelf:'stretch',
     },
+    dropdown: {
+        flex:1,
+        alignSelf:'stretch',
+        borderWidth: 1,
+    },
+    placeholderStyle:{
+        flex:1,
+        alignSelf:'center',
+        textAlign:'center',
+    },
+    itemTitleText:{
+        flex:1,
+        alignSelf:'center',
+        textAlign:'center',
+        fontWeight:'bold',
+        fontSize:13,
+        textDecorationLine:'underline',
+    }
+
 })
+
 
 export default DataFilter
